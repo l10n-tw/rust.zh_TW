@@ -1,34 +1,34 @@
 parser-struct-literal-body-without-path =
-    struct literal body without path
-    .suggestion = you might have forgotten to add the struct literal inside the block
+    結構體字面值的主體缺少路徑
+    .suggestion = 您可能忘記在區塊內加上結構體字面值
 
 parser-maybe-report-ambiguous-plus =
-    ambiguous `+` in a type
-    .suggestion = use parentheses to disambiguate
+    類型中的 `+` 有歧義
+    .suggestion = 使用圓括號解開歧義
 
 parser-maybe-recover-from-bad-type-plus =
-    expected a path on the left-hand side of `+`, not `{$ty}`
+    `+` 的左側預期是個路徑，而非 `${ty}`
 
-parser-add-paren = try adding parentheses
+parser-add-paren = 試試看加上圓括號
 
-parser-forgot-paren = perhaps you forgot parentheses?
+parser-forgot-paren = 可能是您忘記加上圓括號？
 
-parser-expect-path = expected a path
+parser-expect-path = 預期是個路徑
 
 parser-maybe-recover-from-bad-qpath-stage-2 =
-    missing angle brackets in associated item path
-    .suggestion = try: `{$ty}`
+    關聯項目路徑中缺少角括號
+    .suggestion = 試試看：`{$ty}`
 
 parser-incorrect-semicolon =
-    expected item, found `;`
-    .suggestion = remove this semicolon
-    .help = {$name} declarations are not followed by a semicolon
+    預期是項目，但卻是 `;`
+    .suggestion = 移除這個分號
+    .help = {$name} 的宣告之後不應接上分號
 
 parser-incorrect-use-of-await =
-    incorrect use of `await`
-    .parentheses-suggestion = `await` is not a method call, remove the parentheses
-    .postfix-suggestion = `await` is a postfix operation
+    `await` 用法錯誤
+    .parentheses-suggestion = `await` 不是方法呼叫，請移除圓括號
+    .postfix-suggestion = `await` 是個置後動作
 
 parser-in-in-typo =
-    expected iterable, found keyword `in`
-    .suggestion = remove the duplicated `in`
+    預期是可迭代的項目，但卻是 `in` 關鍵字
+    .suggestion = 移除重複的 `in`
